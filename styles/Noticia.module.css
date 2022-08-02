@@ -1,0 +1,64 @@
+.carta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.carta div {
+    padding: 1rem;
+    width: 100%;
+}
+
+.carta img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 100%;
+    width: 100vw;
+    max-height: 210px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carta h2 {
+    color: var(--violeta);
+    margin-bottom: 1rem;
+}
+
+.carta a {
+    display: block;
+    text-align: center;
+    border: 3px solid var(--violeta);
+    color: var(--violeta);
+    border-radius: 10px;
+    padding: 0.3rem 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.carta a:hover {
+    color: var(--blanco);
+    background-color: var(--violeta);
+}
+
+.contenido {
+    white-space: pre-line;
+}
+
+@media (min-width: 991px) {
+    .carta {
+        max-width: 360px;
+    }
+
+    .imagen img {
+        width: 100%;
+        height: 100%;
+        max-height: 500px;
+        object-fit: cover;
+        object-position: center center;
+    }
+}

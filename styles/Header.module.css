@@ -1,0 +1,80 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--amarillo);
+}
+
+.pagina {
+    color: var(--negro);
+    font-weight: 700;
+}
+
+.buttonContainer {
+    width: 100px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--negro);
+    border-radius: 20px;
+}
+
+.button span::before,
+.button span::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--negro);
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.button span::before {
+    transform: translateY(-8px);
+}
+
+.button span::after {
+    transform: translateY(5px);
+}
+
+.button.open span {
+    height: 0;
+}
+
+.button.open span::before {
+    transform: translatey(1px) rotate(50deg);
+}
+
+.button.open span::after {
+    transform: translatey(-1px) rotate(-50deg);
+}
+
+@media (min-width: 911px) {
+    .button {
+        display: none;
+    }
+
+    .pagina {
+        margin: 0 100px 0 300px;
+    }
+
+    .logo {
+        margin-left: 400px;
+    }
+}

@@ -1,0 +1,53 @@
+.descripcion {
+    word-break: break-word;
+    white-space: pre-line;
+    line-height: 1.7rem;
+}
+
+.fechas {
+    font-weight: 400;
+    color: var(--violeta);
+}
+
+.resaltar {
+    color: var(--violeta);
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.timestamp {
+    color: var(--gris);
+}
+
+.boton {
+     border: 1px solid var(--violeta);
+    color: var(--violeta);
+    text-align: center;
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+    width: 100%;
+    font-weight: 600;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.boton:hover,
+.boton:active {
+    background-color: var(--violeta);
+    color: var(--blanco);
+}
+
+@media (min-width: 911px) {
+    .imagen img {
+        width: 100%;
+        max-height: 500px;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    .boton {
+        width: fit-content;
+        margin-left: auto;
+        padding: 8px 30px;
+    }
+}

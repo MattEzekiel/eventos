@@ -1,0 +1,33 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  margin: 1rem auto;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+}
+
+.cardVioleta {
+  border-right: 10px solid var(--violeta);
+}
+
+.cardAmarillo {
+  border-left: 10px solid var(--amarillo);
+}
+
+@media (min-width: 911px) {
+  .card {
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .cardContenedor {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .cardContenedor p {
+    width: 50%;
+  }
+}

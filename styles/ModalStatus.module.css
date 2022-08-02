@@ -1,0 +1,27 @@
+.close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.boton {
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    border: 2px solid var(--violeta);
+    color: var(--violeta);
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 0.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.boton:hover {
+    color: var(--blanco);
+    background-color: var(--violeta);
+}

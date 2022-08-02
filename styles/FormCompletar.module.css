@@ -1,0 +1,63 @@
+.form {
+    column-gap: 40px;
+    width: 100%;
+    margin: auto;
+}
+
+.inpiutContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px auto;
+    position: relative;
+}
+
+.inpiutContainer :is(input[type="tel"], input[type="email"], input[type="password"], input[type="number"], input[type="text"]) {
+    border: 1px solid var(--negro);
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px 10px;
+    color: var(--violeta);
+}
+
+.inpiutContainer :is(label, small) {
+    padding-left: 10px;
+}
+
+.inpiutContainer small {
+    color: var(--gris);
+    margin-top: 5px;
+}
+
+.inpiutContainer input[type="submit"] {
+    background-color: var(--violeta);
+    color: var(--blanco);
+    font-weight: 600;
+    border-color: var(--violeta);
+    border-radius: 10px;
+}
+
+.inpiutContainer input[type="submit"]:disabled {
+    background-color: var(--gris);
+    cursor: not-allowed;
+}
+
+.ojo {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    max-width: 30px;
+    margin-top: 1.5rem;
+}
+
+.ojo :is(img, span) {
+    max-width: 100%;
+    display: block;
+}
+
+.preview {
+    max-width: 200px;
+    width: 100%;
+    margin: 1rem auto;
+}

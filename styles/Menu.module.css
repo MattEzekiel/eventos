@@ -1,0 +1,63 @@
+.background {
+    background-color: transparent;
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav {
+    background-color: var(--negro);
+    width: 100%;
+    max-width: 75vw;
+    height: 100vh;
+    padding-bottom: 2rem;
+}
+
+.nav ul li a {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin: 1rem auto;
+    font-size: 1.125rem;
+}
+
+.background.aparecer {
+    left: 0;
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    z-index: 10;
+    overflow-y: scroll;
+    width: 100vw;
+    max-width: 100%;
+}
+
+.hr {
+    max-width: 90%;
+}
+
+@media (min-width: 911px) {
+    .background {
+        left: 0;
+        max-width: 360px;
+        position: fixed;
+    }
+
+    .background.aparecer {
+        left: 0;
+        background-color: transparent;
+        z-index: 10;
+        overflow-y: auto;
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .nav {
+        width: 100%;
+        z-index: 1;
+    }
+}

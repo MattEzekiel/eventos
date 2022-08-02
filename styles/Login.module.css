@@ -1,0 +1,41 @@
+.background {
+    background-image: url("/imgs/mobile/bg-login.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 7vh;
+}
+
+.backgroundRegistro {
+    background-image: url("/imgs/mobile/bg-registro.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.registrarme {
+    color: var(--violeta);
+    font-weight: 600;
+}
+
+@media (min-width: 991px) {
+    .background {
+        background-image: url("/imgs/desktop/bg-login.svg");
+        padding: 0;
+    }
+
+    .backgroundRegistro {
+        background-image: url("/imgs/desktop/bg-registro.svg");
+    }
+
+    :is(.background, .backgroundRegistro) > div {
+        border-radius: 5px;
+        max-width: 500px;
+        padding: 2rem;
+        transition: 0.3s ease-in-out;
+    }
+
+    :is(.background, .backgroundRegistro) > div:hover {
+        box-shadow: 0 0 5px var(--violeta);
+    }
+}

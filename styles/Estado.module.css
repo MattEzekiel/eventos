@@ -1,0 +1,24 @@
+.pregunta {
+    position: relative;
+    background-color: var(--violeta);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    z-index: 2;
+}
+
+.ping {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: var(--violeta);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
+}

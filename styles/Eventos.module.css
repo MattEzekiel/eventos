@@ -1,0 +1,16 @@
+.btn {
+    color: var(--blanco);
+    background-color: var(--violeta);
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+}
+
+@media (min-width: 911px) {
+    .btn {
+        width: fit-content;
+        margin-left: auto;
+        padding: 8px 30px;
+    }
+}
