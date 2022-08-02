@@ -1,12 +1,11 @@
 .perfil {
-    border-radius: 5px;
     max-width: 30px;
     max-height: 30px;
+    border-radius: 50%;
+    border: 1px solid var(--violeta);
 }
 
 .perfil img {
-    border-radius: 50%;
-    border: 1px solid var(--violeta);
     width: 100%;
     height: 100%;
     object-fit: cover;
