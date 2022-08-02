@@ -20,6 +20,7 @@
     max-height: 50px;
     object-fit: cover;
     object-position: center;
+    background-color: var(--violeta);
 }
 
 .usuario div {
