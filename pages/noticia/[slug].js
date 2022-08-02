@@ -57,7 +57,7 @@ export default function EntradaNoticia({noticia}) {
                     <picture>
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
-                            src={process.env.API_IMAGEN + '/public/imgs/noticias/' + imagen}
+                            src={process.env.API_IMAGEN + '/imgs/noticias/' + imagen}
                             alt={`${titulo} - noticia`}
                         />
                     </picture>

@@ -102,7 +102,7 @@ export default function FormEditImagen({ imagen, setUsuario, setEditarImagen } )
                     // eslint-disable-next-line @next/next/no-img-element
                     <img
                         className={Styles.preview}
-                        src={process.env.API_IMAGEN + imagen}
+                        src={process.env.API_IMAGEN + imagen.replace('public/','')}
                         alt="imagen" />
                 )
             }

@@ -12,7 +12,7 @@ export default function Evento({evento}) {
             <div>
                 <picture>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={process.env.API_IMAGEN + imagen} alt={`${nombre} imagen`}/>
+                    <img src={process.env.API_IMAGEN + imagen.replace('public/','')} alt={`${nombre} imagen`}/>
                 </picture>
             </div>
             <div className={Styles.contenido}>
