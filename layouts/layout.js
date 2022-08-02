@@ -31,7 +31,7 @@ export default function Layout({ children, pagina, title, datosUsuario }) {
                 pagina={pagina}
                 datosUsuario={datosUsuario}
             />
-            <main className={`${Styles.main} mx-auto my-5`}>
+            <main className={`${Styles.main} mx-auto my-5 relative`}>
                 {children}
             </main>
             <Footer />

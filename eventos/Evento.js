@@ -4,12 +4,15 @@ import Link from "next/link";
 
 export default function Evento({evento}) {
     // console.log(evento)
-    const { nombre, desde, hasta, id_evento, imagen } = evento;
+    const { nombre, desde, hasta, id_evento, imagen, deleted_at } = evento;
     return (
         <article
             className={Styles.evento}
         >
-            <div>
+            <div className={"relative"}>
+                { deleted_at && (
+                    <span className={`${Styles.eliminado} bg-red-100 text-red-700 px-5 py-1 font-semibold rounded`}>Evento bloqueado</span>
+                ) }
                 <picture>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src={process.env.API_IMAGEN + imagen?.replace('public/','')} alt={`${nombre} imagen`}/>

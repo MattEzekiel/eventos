@@ -1,6 +1,7 @@
 import {dateTime} from "../helpers";
 import Styles from '../styles/DetalleEvento.module.css';
 import Breadcrum from "../components/Breadcrum";
+import Link from "next/link";
 
 export default function Detalle({
     nombre,
@@ -12,6 +13,7 @@ export default function Detalle({
     publicado,
     updated_at,
     created_at,
+    deleted_at,
     setEditar
 })
     {
@@ -47,6 +49,9 @@ export default function Detalle({
                 <li className={"text-sm"}>Creado el: <span className={Styles.timestamp}>{dateTime(created_at)}</span></li>
                 <li className={"text-sm"}>Última modificación: <span className={Styles.timestamp}>{dateTime(updated_at)}</span></li>
             </ul>
+            { deleted_at && (
+                <p className={"bg-red-100 text-red-700 px-5 py-1 font-semibold rounded"}>Su evento ha sido bloqueado ya que viola las políticas y términos de servicio. Si cree que es un error <Link href={"/contacto"}>contáctenos</Link></p>
+            ) }
             <div className={"md:flex md:justify-end md:items-center"}>
                 <button
                     type={"button"}

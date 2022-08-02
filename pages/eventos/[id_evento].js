@@ -47,8 +47,10 @@ export default function Id_evento({evento}) {
                 { loader && (
                     <PawLoader />
                 ) }
-                <h2 className={"text-center text-2xl my-5"}>El evento no existe</h2>
-                <Link href={"/eventos"}><a className={"text-center text-violeta block"}>Volver</a></Link>
+                <div>
+                    <h2 className={"text-center text-2xl my-5"}>El evento no existe</h2>
+                    <Link href={"/eventos"}><a className={"text-center text-violeta block"}>Volver</a></Link>
+                </div>
             </Layout>
         )
     }
