@@ -358,7 +358,7 @@ export default function FormEvento({
                         // eslint-disable-next-line @next/next/no-img-element
                         <img
                             className={Styles.imgPreview}
-                            src={typeof imagen === 'object' ? previewImage(imagen) : process.env.API_IMAGEN + imagen.replace('public/','')}
+                            src={typeof imagen === 'object' ? previewImage(imagen) : process.env.API_IMAGEN + imagen?.replace('public/','')}
                             alt="imagen" />
                     ) }
                     <small>Previsualización de la imagen</small>

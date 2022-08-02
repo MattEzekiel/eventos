@@ -118,7 +118,7 @@ export default function EditarPerfil() {
                         (
                             <dd>
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                                <img src={imagen ? process.env.API_IMAGEN + imagen.replace('public/','') : '/imgs/user-default.png'} width={150} height={150} alt={"Imagen de perfil"}/>
+                                <img src={imagen ? process.env.API_IMAGEN + imagen?.replace('public/','') : '/imgs/user-default.png'} width={150} height={150} alt={"Imagen de perfil"}/>
                             </dd>
                         )
                 }

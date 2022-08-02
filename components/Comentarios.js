@@ -13,7 +13,7 @@ export default function Comentarios({comentario}) {
                 {
                     imagen !== null ?
                         // eslint-disable-next-line @next/next/no-img-element
-                        (<img src={process.env.API_IMAGEN + imagen.replace('public/','')} alt="Imagen de perfil"/>)
+                        (<img src={process.env.API_IMAGEN + imagen?.replace('public/','')} alt="Imagen de perfil"/>)
                         :
                         // eslint-disable-next-line @next/next/no-img-element
                         (<img src={"/imgs/user-default.png"} alt={"Imagen de perfil"} />)

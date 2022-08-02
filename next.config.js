@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   env: {
     API_URL: process.env.API_URL,
-    API_IMAGEN: process.env.API_URL,
+    API_IMAGEN: process.env.NEXT_PUBLIC_API_IMAGEN,
     NEXT_PUBLIC_API_IMAGEN: 'https://admin.unidos-app.com/',
     API_GOOGLE: process.env.API_GOOGLE
   },
