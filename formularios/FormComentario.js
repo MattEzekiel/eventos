@@ -1,6 +1,7 @@
 import Styles from "../styles/Comentario.module.css";
 import {useEffect, useState} from "react";
 import Mensaje from "../components/Mensaje";
+import {imgENV} from "../helpers";
 
 export default function FormComentario({ usuario, id_noticia, setComentarios }) {
     const [disabled, setDisabled] = useState(true);
@@ -46,7 +47,7 @@ export default function FormComentario({ usuario, id_noticia, setComentarios }) 
                     {
                         imagen !== null ?
                             // eslint-disable-next-line @next/next/no-img-element
-                            (<img src={process.env.API_IMAGEN + imagen?.replace('public/','')} alt="Imagen de perfil"/>)
+                            (<img src={process.env.API_IMAGEN + imgENV(imagen)} alt="Imagen de perfil"/>)
                             :
                             // eslint-disable-next-line @next/next/no-img-element
                             (<img src={"/imgs/user-default.png"} alt={"Imagen de perfil"} />)
@@ -58,7 +59,7 @@ export default function FormComentario({ usuario, id_noticia, setComentarios }) 
             </div>
             <form
                 onSubmit={handleSubmit}
-                className={`${Styles.form} bg-gray-300 p-1`}
+                className={`${Styles.form} bg-gray-300 p-1 mb-10`}
             >
                 <label
                     htmlFor={"comentario"}

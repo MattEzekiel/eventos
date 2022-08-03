@@ -1,10 +1,11 @@
 import Styles from '../styles/Evento.module.css';
-import {dateTime} from "../helpers";
+import {dateTime, imgENV} from "../helpers";
 import Link from "next/link";
 
 export default function Evento({evento}) {
     // console.log(evento)
     const { nombre, desde, hasta, id_evento, imagen, deleted_at } = evento;
+
     return (
         <article
             className={Styles.evento}
@@ -15,7 +16,7 @@ export default function Evento({evento}) {
                 ) }
                 <picture>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={process.env.API_IMAGEN + imagen?.replace('public/','')} alt={`${nombre} imagen`}/>
+                    <img src={process.env.API_IMAGEN + imgENV(imagen)} alt={`${nombre} imagen`}/>
                 </picture>
             </div>
             <div className={Styles.contenido}>

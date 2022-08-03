@@ -13,14 +13,14 @@
     width: 100%;
 }
 
-.carta img{
+.carta img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    height: 100%;
-    width: 100vw;
-    max-height: 210px;
+    height: 210px;
+    width: 100%;
     object-fit: cover;
     object-position: center;
+    background-color: var(--gris);
 }
 
 .carta h2 {

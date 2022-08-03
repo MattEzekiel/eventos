@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import Mensaje from "../components/Mensaje";
 import Styles from "../styles/FormCompletar.module.css";
-import {previewImage} from "../helpers";
+import {imgENV, previewImage} from "../helpers";
 
 export default function FormEditImagen({ imagen, setUsuario, setEditarImagen } ) {
     const [imagenEdit, setImagenEdit] = useState('');
@@ -102,7 +102,7 @@ export default function FormEditImagen({ imagen, setUsuario, setEditarImagen } )
                     // eslint-disable-next-line @next/next/no-img-element
                     <img
                         className={Styles.preview}
-                        src={process.env.API_IMAGEN + imagen?.replace('public/','')}
+                        src={process.env.API_IMAGEN + imgENV(imagen)}
                         alt="imagen" />
                 )
             }

@@ -1,5 +1,6 @@
 import Styles from "../styles/MenuDatosUsuario.module.css";
 import {useEffect, useState} from "react";
+import {imgENV} from "../helpers";
 
 export default function MenuDatosUsuario({datosUsuario}) {
     const [datos, setDatos] = useState({
@@ -27,7 +28,7 @@ export default function MenuDatosUsuario({datosUsuario}) {
                     <img width={50} height={50} src={"/imgs/user-default.png"} alt={"Imagen predeterminada para usuario"}  />
             ) : (
                     // eslint-disable-next-line @next/next/no-img-element
-                    <img width={50} height={50} src={process.env.API_IMAGEN + datos.imagen?.replace('public/','')} alt={`Foto de ${datos.razon_social}`} />
+                    <img width={50} height={50} src={process.env.API_IMAGEN + imgENV(datos.imagen)} alt={`Foto de ${datos.razon_social}`} />
                 )
             }
             <div className={"overflow-hidden"}>

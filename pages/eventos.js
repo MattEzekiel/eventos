@@ -30,6 +30,7 @@ export default function Eventos() {
         }
     },[router]);
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     const buscarEventos = async id => {
         const URL = `${process.env.API_URL}/eventos-cms/${Number(id)}`;
         const respuesta = await fetch(URL);
@@ -43,7 +44,7 @@ export default function Eventos() {
         if (id !== '') {
             buscarEventos(id)
         }
-    },[id]);
+    },[id, buscarEventos]);
 
     return (
         <Layout

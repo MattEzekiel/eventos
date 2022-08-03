@@ -1,7 +1,7 @@
 import Layout from "../../layouts/layout";
 import React, {useEffect, useState} from "react";
 import {useRouter} from "next/router";
-import {fecha} from "../../helpers";
+import {fecha, imgENV} from "../../helpers";
 import Styles from '../../styles/Noticia.module.css'
 import Breadcrum from "../../components/Breadcrum";
 import Comentarios from "../../components/Comentarios";
@@ -57,7 +57,7 @@ export default function EntradaNoticia({noticia}) {
                     <picture>
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
-                            src={process.env.API_IMAGEN + '/imgs/noticias/' + imagen}
+                            src={process.env.API_IMAGEN + imgENV('/public/imgs/noticias/') + imagen}
                             alt={`${titulo} - noticia`}
                         />
                     </picture>

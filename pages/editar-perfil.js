@@ -8,6 +8,7 @@ import FormEditEmail from "../formularios/FormEditEmail";
 import FormEditPassword from "../formularios/FormEditPassword";
 import FormEditTelefono from "../formularios/FormEditTelefono";
 import FormEditImagen from "../formularios/FormEditImagen";
+import {imgENV} from "../helpers";
 
 export default function EditarPerfil() {
     const [usuario, setUsuario] = useState({
@@ -47,7 +48,7 @@ export default function EditarPerfil() {
             ) }
             <h2 className={"mb-5 md:block hidden text-xl font-semibold md:my-10 md:text-center"}>Cambie los datos que usted desee</h2>
             <p className={"mb-10 text-center md:hidden"}>Elija que desea editar</p>
-            <dl className={"md:max-w-3xl md:mx-auto"}>
+            <dl className={"md:max-w-3xl md:mx-auto mb-10"}>
                 <dt
                     className={"flex justify-between items-center text-sm cursor-pointer"}
                     onClick={() => setEditarNombre(!editarNombre)}
@@ -118,7 +119,7 @@ export default function EditarPerfil() {
                         (
                             <dd>
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                                <img src={imagen ? process.env.API_IMAGEN + imagen?.replace('public/','') : '/imgs/user-default.png'} width={150} height={150} alt={"Imagen de perfil"}/>
+                                <img src={imagen ? process.env.API_IMAGEN + imgENV(imagen) : '/imgs/user-default.png'} width={150} height={150} alt={"Imagen de perfil"}/>
                             </dd>
                         )
                 }

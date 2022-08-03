@@ -1,5 +1,5 @@
 import Link from "next/link";
-import {fecha} from "../helpers";
+import {fecha, imgENV} from "../helpers";
 import Styles from '../styles/Noticia.module.css';
 
 export default function Noticia({noticia}) {
@@ -10,7 +10,7 @@ export default function Noticia({noticia}) {
             <figure>
                 <picture>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={process.env.API_IMAGEN + '/imgs/noticias/' + imagen} alt={`${titulo} portada`} />
+                    <img src={process.env.API_IMAGEN + imgENV('public/imgs/noticias/') + imagen} alt={`${titulo} portada`} />
                 </picture>
                 <figcaption className={"text-gray-400 text-sm my-3 pl-3"}>Publicado el: {fecha(created_at)}</figcaption>
             </figure>

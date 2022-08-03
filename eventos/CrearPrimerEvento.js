@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function CrearPrimerEvento() {
     return (
-        <>
+        <div className={"flex flex-col justify-center items-center w-full"}>
             <h2 className={"text-xl font-semibold text-center mt-10"}>No tiene ningún evento creado</h2>
             <div className={"flex justify-center items-center mt-5"}>
                 <Image
@@ -13,6 +13,6 @@ export default function CrearPrimerEvento() {
                     alt={"Crear un evento"}
                 />
             </div>
-        </>
+        </div>
     )
 }

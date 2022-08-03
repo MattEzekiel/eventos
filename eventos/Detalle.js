@@ -1,4 +1,4 @@
-import {dateTime} from "../helpers";
+import {dateTime, imgENV} from "../helpers";
 import Styles from '../styles/DetalleEvento.module.css';
 import Breadcrum from "../components/Breadcrum";
 import Link from "next/link";
@@ -27,7 +27,7 @@ export default function Detalle({
             <div className={Styles.imagen}>
                 <picture>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={process.env.API_IMAGEN + imagen?.replace('public/','')} alt={`${nombre}. Imagen del evento`} />
+                    <img src={process.env.API_IMAGEN + imgENV(imagen)} alt={`${nombre}. Imagen del evento`} />
                 </picture>
             </div>
             <h2 className={"text-xl text-center font-semibold my-5 break-all"}>{nombre}</h2>

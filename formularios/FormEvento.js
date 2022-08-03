@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Styles from '../styles/FormEvento.module.css';
 import GoogleMaps from "../google/GoogleMaps";
-import {dateTimeLocal, previewImage} from "../helpers";
+import {dateTimeLocal, imgENV, previewImage} from "../helpers";
 
 export default function FormEvento({
     setSuccess,
@@ -358,7 +358,7 @@ export default function FormEvento({
                         // eslint-disable-next-line @next/next/no-img-element
                         <img
                             className={Styles.imgPreview}
-                            src={typeof imagen === 'object' ? previewImage(imagen) : process.env.API_IMAGEN + imagen?.replace('public/','')}
+                            src={typeof imagen === 'object' ? previewImage(imagen) : process.env.API_IMAGEN + imgENV(imagen)}
                             alt="imagen" />
                     ) }
                     <small>Previsualización de la imagen</small>

@@ -23,3 +23,15 @@ export function previewImage(imagen) {
 export function imageWorking(imagen) {
     return /\.(jpeg|jpg|png|gif)\b/i.test(imagen);
 }
+
+export function imgENV(imagen) {
+    const env = process.env.NODE_ENV;
+    if(env === "development") {
+        // console.log("development")
+        return imagen
+    }
+    else if (env === "production") {
+        // console.log("production")
+        return imagen?.replace('public/','')
+    }
+}
