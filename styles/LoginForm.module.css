@@ -51,6 +51,7 @@
     font-weight: 600;
     border-color: var(--violeta);
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .ojo {

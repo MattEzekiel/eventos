@@ -37,7 +37,8 @@ export default function Login() {
                         router={router}
                         setLoader={setLoader}
                     />
-                    <p>¿No tiene cuenta? <Link href={"/register"}><a className={Styles.registrarme}>Registrarme</a></Link></p>
+                    <p className={"mt-3"}>¿No tiene cuenta? <Link href={"/register"}><a className={Styles.registrarme}>Registrarme</a></Link></p>
+                    <p className={"mt-3"}>¿Olvidó su contraseña? <Link href={"/olvide-password"}><a className={Styles.registrarme}>Ingrese aquí</a></Link></p>
                 </div>
             </div>
         </>
