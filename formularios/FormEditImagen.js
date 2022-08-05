@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import Mensaje from "../components/Mensaje";
 import Styles from "../styles/FormCompletar.module.css";
 import {imgENV, previewImage} from "../helpers";
+import Image from "next/image";
 
 export default function FormEditImagen({ imagen, setUsuario, setEditarImagen } ) {
     const [imagenEdit, setImagenEdit] = useState('');
@@ -98,12 +99,18 @@ export default function FormEditImagen({ imagen, setUsuario, setEditarImagen } )
                     className={Styles.preview}
                     src={previewImage(imagenEdit)}
                     alt="imagen" />
-                ) : (
+                ) :
+                imagen ? (
                     // eslint-disable-next-line @next/next/no-img-element
                     <img
                         className={Styles.preview}
                         src={process.env.API_IMAGEN + imgENV(imagen)}
                         alt="imagen" />
+                )
+                    :
+                (
+                    // eslint-disable-next-line @next/next/no-img-element
+                <img src={'/imgs/user-default.png'} width={150} height={150} alt={"Imagen de perfil"}/>
                 )
             }
             <div className={Styles.inpiutContainer}>
