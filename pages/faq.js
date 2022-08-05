@@ -62,7 +62,7 @@ export default function Faq() {
                             </button> <br/>
                             O en la sección de edición de datos
                             </li>
-                            <li className={"mt-5"}>Por otra parte una vez completado sus perfil nosotros validaremos tus datos contactándonos con usted. Verá su cuenta validada cuando en el menú vea este ícono
+                            <li className={"mt-5"}>Por otra parte una vez completado sus perfil nosotros validaremos tus datos contactándonos con usted. Verá su cuenta validada cuando en el menú vea este ícono.
                                 {/* eslint-disable-next-line jsx-a11y/alt-text */}
                                 <Image layout={"fixed"} width={20} height={20} src={"/imgs/verificado.svg"} /></li>
                         </ol>
@@ -79,9 +79,9 @@ export default function Faq() {
                     <AccordionItemPanel className={"px-5 py-8"}>
                         <p>Solamente son visibles:</p>
                         <ul>
-                            <li>Su número de teléfono (para que los usuarios puedan contactarse con ustedes)</li>
-                            <li>El nombre de su dispuesto por usted</li>
-                            <li>La imágen que ingrese será visible como su marca</li>
+                            <li>Su número de teléfono (para que los usuarios puedan contactarse con ustedes).</li>
+                            <li>El nombre de su dispuesto por usted.</li>
+                            <li>La imágen que ingrese será visible como su marca.</li>
                         </ul>
                     </AccordionItemPanel>
                 </AccordionItem>
@@ -94,7 +94,7 @@ export default function Faq() {
                         </AccordionItemButton>
                     </AccordionItemHeading>
                     <AccordionItemPanel className={"px-5 py-8"}>
-                        <p>Para crear nuevos eventos deberá dirigirse a la sección de eventos desde el menú. Ahí vera el botón que dice <b>&#34;crear evento&#34;</b>. En esta sección deberá completar todos los campos para publicar sus eventos</p>
+                        <p>Para crear nuevos eventos deberá dirigirse a la sección de eventos desde el menú. Ahí vera el botón que dice <b>&#34;crear evento&#34;</b>. En esta sección deberá completar todos los campos para publicar sus eventos.</p>
                     </AccordionItemPanel>
                 </AccordionItem>
                 <AccordionItem>
@@ -106,7 +106,7 @@ export default function Faq() {
                         </AccordionItemButton>
                     </AccordionItemHeading>
                     <AccordionItemPanel className={"px-5 py-8"}>
-                        <p>No. Todos los eventos que se crean en la aplicación deben ser futuros (dentro de un par de horas, dias, meses u años)</p>
+                        <p>No. Todos los eventos que se crean en la aplicación deben ser futuros (dentro de un par de horas, dias, meses u años).</p>
                     </AccordionItemPanel>
                 </AccordionItem>
                 <AccordionItem>
@@ -118,7 +118,7 @@ export default function Faq() {
                         </AccordionItemButton>
                     </AccordionItemHeading>
                     <AccordionItemPanel className={"px-5 py-8"}>
-                        <p>Guardar como borrador le permitirá a usted revisar todo su contenido antes de que los usuario de la aplicación de <b>Unidos</b> puedan verlo. Solo usted puede ver ese evento hasta que lo publique. <br/> Una vez publicado ese evento estará visible para todo usuario de la aplicación</p>
+                        <p>Guardar como borrador le permitirá a usted revisar todo su contenido antes de que los usuario de la aplicación de <b>Unidos</b> puedan verlo. Solo usted puede ver ese evento hasta que lo publique. <br/> Una vez publicado ese evento estará visible para todo usuario de la aplicación.</p>
                     </AccordionItemPanel>
                 </AccordionItem>
                 <AccordionItem>
@@ -130,7 +130,7 @@ export default function Faq() {
                         </AccordionItemButton>
                     </AccordionItemHeading>
                     <AccordionItemPanel className={"px-5 py-8"}>
-                        <p>Es posible que no esté publicado debido a que su perfil no esté verificado. O en cuyo coso esté visible en unos minutos <br/> De no ser así comuníquese con nosotros en contacto</p>
+                        <p>Es posible que no esté publicado debido a que su perfil no esté verificado. O en cuyo coso esté visible en unos minutos <br/> De no ser así comuníquese con nosotros en contacto.</p>
                     </AccordionItemPanel>
                 </AccordionItem>
                 <AccordionItem>
@@ -142,7 +142,7 @@ export default function Faq() {
                         </AccordionItemButton>
                     </AccordionItemHeading>
                     <AccordionItemPanel className={"px-5 py-8"}>
-                        <p>De momento no contamos con esa funcionalidad. Solo se pueden crear eventos que existan una sola vez en la app. En futuras actualizaciones tomaremos en cuenta este punto</p>
+                        <p>De momento no contamos con esa funcionalidad. Solo se pueden crear eventos que existan una sola vez en la app. En futuras actualizaciones tomaremos en cuenta este punto.</p>
                     </AccordionItemPanel>
                 </AccordionItem>
                 <AccordionItem>
@@ -154,7 +154,7 @@ export default function Faq() {
                         </AccordionItemButton>
                     </AccordionItemHeading>
                     <AccordionItemPanel className={"px-5 py-8"}>
-                        <p>Las noticias es un medio que utilizamos desde <b>Unidos</b> para comentarles las últimas actualizaciones y que estén al tanto de todo lo que ocurre en nuestras distintas aplicaciones</p>
+                        <p>Las noticias es un medio que utilizamos desde <b>Unidos</b> para comentarles las últimas actualizaciones y que estén al tanto de todo lo que ocurre en nuestras distintas aplicaciones.</p>
                     </AccordionItemPanel>
                 </AccordionItem>
                 <AccordionItem>
@@ -166,7 +166,7 @@ export default function Faq() {
                         </AccordionItemButton>
                     </AccordionItemHeading>
                     <AccordionItemPanel className={"px-5 py-8"}>
-                        <p>Al momento de perder su contraseña deberá completar un formulario y nosotros le restableceremos una provisional que, le sugerimos, que cambie a penas vuelva a iniciar sesión</p>
+                        <p>Al momento de perder su contraseña deberá completar un formulario y nosotros le restableceremos una provisional que, le sugerimos, que cambie a penas vuelva a iniciar sesión.</p>
                     </AccordionItemPanel>
                 </AccordionItem>
             </Accordion>

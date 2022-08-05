@@ -34,7 +34,7 @@ export default function Dashboard() {
             { eliminado !== null && (
                 <UsuarioEliminado />
             ) }
-            <h2 className={"text-lg font-semibold md:text-center md:text-3xl md:my-10"}>Bienvenido {usuario.razon_social}</h2>
+            <h2 className={"text-lg font-semibold md:text-center md:text-3xl md:my-10"}>Hola, {usuario.razon_social}</h2>
             <div className={`${Styles.cardContenedor} mb-5`}>
                 <p className={"mt-5 md:text-lg md:pr-10"}>Cree, modifique y supervise sus eventos personalizados para alcanzar a esas personas amantes de los animales.</p>
                 <Link href={"/eventos"}>
@@ -46,7 +46,7 @@ export default function Dashboard() {
             </div>
             <hr/>
             <div className={`${Styles.cardContenedor} md:flex-row-reverse`}>
-                <p className={"mt-5 md:text-lg md:pl-10"}>En la sección de noticias le informamos de todo lo necesario para el uso de esta aplicación y novedades próximas que le podrán servir al momento de crear eventos y cómo llegar a su público</p>
+                <p className={"mt-5 md:text-lg md:pl-10"}>En la sección de noticias le informamos de todo lo necesario para el uso de esta aplicación y novedades próximas que le podrán servir al momento de crear eventos y cómo llegar a su público.</p>
                 <Link href={"/noticias"}>
                     <div className={`${Styles.card} ${Styles.cardAmarillo}`}>
                         <Image layout={"fixed"} width={126} height={126} src={"/imgs/card-noticia.svg"} alt={"Ver Noticias"} />
