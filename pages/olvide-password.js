@@ -32,7 +32,7 @@ export default function OlvidePassword() {
             <div className={`${Styles.background} flex justify-center items-center w-screen h-screen flex-col`}>
                 <div className={"container mx-auto flex flex-col justify-center items-center md:shadow md:rounded md:border"}>
                     <Image layout={"fixed"} width={215} height={72} src={"/imgs/logo.svg"} alt={"Logo Unidos"} priority />
-                    <h2 className={"text-center text-2xl my-5"}>Recuperar Contraseña</h2>
+                    <h2 className={"text-center text-2xl mt-3"}>Recuperar Contraseña</h2>
                     <FormOlvidePassword
                         setLoader={setLoader}
                     />

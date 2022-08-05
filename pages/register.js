@@ -32,7 +32,7 @@ export default function Register() {
             <div className={`${Styles.backgroundRegistro} flex justify-center items-center w-screen h-screen flex-col`}>
                 <div className={"container mx-auto flex flex-col justify-center items-center md:shadow md:rounded md:border"}>
                     <Image layout={"fixed"} width={215} height={72} src={"/imgs/logo.svg"} alt={"Logo Unidos"} />
-                    <h2 className={"text-center text-2xl my-5"}>Registrarse</h2>
+                    <h2 className={"text-center text-2xl mt-3"}>Registrarse</h2>
                     <FormRegister
                         router={router}
                         setLoader={setLoader}

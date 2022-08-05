@@ -32,7 +32,7 @@ export default function Login() {
             <div className={`${Styles.background} flex justify-center items-center w-screen h-screen flex-col`}>
                 <div className={"container mx-auto flex flex-col justify-center items-center md:shadow md:rounded md:border"}>
                     <Image layout={"fixed"} width={215} height={72} src={"/imgs/logo.svg"} alt={"Logo Unidos"} />
-                    <h2 className={"text-center text-2xl my-5"}>Iniciar Sesión</h2>
+                    <h2 className={"text-center text-2xl mt-3"}>Iniciar Sesión</h2>
                     <FormLogin
                         router={router}
                         setLoader={setLoader}

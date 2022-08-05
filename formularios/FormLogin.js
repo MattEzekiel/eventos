@@ -202,9 +202,9 @@ export default function FormLogin({ router, setLoader }) {
                 >
                     {
                         togglePassword ?
-                            <Image layout={"fixed"} width={48} height={48} src={"/imgs/eye.svg"} alt={"ocultar contraseña"} />
+                            <Image layout={"fixed"} width={48} height={48} src={"/imgs/eye.svg"} alt={"ocultar contraseña"} priority />
                             :
-                            <Image layout={"fixed"} width={48} height={48} src={"/imgs/eye-closed.svg"} alt={"ver contraseña"} />
+                            <Image layout={"fixed"} width={48} height={48} src={"/imgs/eye-closed.svg"} alt={"ver contraseña"} priority />
                     }
                 </button>
                 { errorPassword !== '' && (
