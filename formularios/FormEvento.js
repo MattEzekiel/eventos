@@ -309,13 +309,13 @@ export default function FormEvento({
                         onChange={e => setHasta(e.target.value)}
                         value={hasta}
                     />
-                    { errorFecha !== '' && (
-                        <p
-                            className={"mt-3 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative text-center"}
-                            role={"alert"}
-                        >{errorFecha}</p>
-                    )}
                 </div>
+                { errorFecha !== '' && (
+                    <p
+                        className={"mt-3 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative text-center w-full"}
+                        role={"alert"}
+                    >{errorFecha}</p>
+                )}
                 {/*Google Maps*/}
                 <div className={`my-5 ${Styles.googleContainer}`}>
                     <GoogleMaps
