@@ -89,6 +89,7 @@ export default function FormEditImagen({ imagen, setUsuario, setEditarImagen } )
                     placeholder={"Ingrese su nueva imagen"}
                     name={"imagen"}
                     id={"imagen"}
+                    accept={"image/*"}
                     className={"file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-violet-50 file:text-violet-700 hover:file:bg-violet-100"}
                 />
             </div>
