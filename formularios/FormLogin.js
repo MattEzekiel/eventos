@@ -146,7 +146,7 @@ export default function FormLogin({ router, setLoader }) {
             <div className={Styles.inpiutContainer}>
                 <label
                     className={"text-lg"}
-                    htmlFor={"cuit"}>Cuit</label>
+                    htmlFor={"cuit"}>CUIT</label>
                 <input
                     type={"number"}
                     name={"cuit"}
